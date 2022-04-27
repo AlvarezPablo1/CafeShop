@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
 
-
 *{
   margin: 0;
   padding: 0;
@@ -12,7 +11,18 @@
   color: aliceblue;
 }
 
+main{
+  background-image: url(./components/assets/img/Backgroud.jpg);
+  height: auto;
+  width: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
 .navbar{
+  background-color: rgb(18, 18, 18);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,8 +31,8 @@
   align-items: center;
   font-family: 'oswald', sans-serif;
   font-size: 22px;
-  position: fixed;
-  box-shadow:1px 1px 10px rgb(112, 112, 112);
+  box-shadow:1px 1px 10px rgb(255, 255, 255);
+
 }
 
 #titulo{
@@ -34,13 +44,62 @@
   font-size: 50px;
 }
 
-.greeting{
+.parrafoPresentacion{
+  text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
   font-family: 'oswald', sans-serif;
-  background-color: rgb(14, 14, 14);
+  font-size: 25px;
+  backdrop-filter: blur(4px);
+}
+
+.SubTitulos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Merriweather', serif;;
+  text-decoration: underline;
+  text-decoration-color:rgb(255, 219, 172);
+  text-decoration-style:wavy;
+}
+
+.productos{
+  backdrop-filter: blur(4px); 
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+.botones{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.btnCompra{
+  background-color: black;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.fotoProducto{
+  border-top-right-radius: 5px;
 }
 
