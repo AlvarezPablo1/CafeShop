@@ -22,10 +22,9 @@ function App() {
       </header>
 
       <main>
-        <br/><br/><br/>
-        <AboutUs/>
-        <br/><br/><br/>
-        <h2 className='SubTitulos'>Productos</h2>
+          <br/><br/><br/><br/><br/><br/><br/><br/>
+          <AboutUs className="about"/>
+          <br/><br/><br/>
         <br/><br/><br/>
         <Products/>
         <br/><br/><br/>

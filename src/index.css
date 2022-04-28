@@ -12,17 +12,13 @@
 }
 
 main{
-  background-image: url(./components/assets/img/Backgroud.jpg);
-  height: auto;
-  width: auto;
-  background-size: 100%;
+  background-image: url(./components/assets/img/Background.jpg);
+  background-size: auto;
   background-repeat: no-repeat;
-  position: relative;
 }
 
-
 .navbar{
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(15, 15, 15);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,8 +27,8 @@ main{
   align-items: center;
   font-family: 'oswald', sans-serif;
   font-size: 22px;
-  box-shadow:1px 1px 10px rgb(255, 255, 255);
-
+  box-shadow:1px 1px 10px rgb(115, 115, 115);
+  position: fixed;
 }
 
 #titulo{
@@ -45,8 +41,9 @@ main{
 }
 
 .parrafoPresentacion{
+  top: 500px;
   text-align: center;
-  display: flex;
+  display:  flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -54,7 +51,6 @@ main{
   align-items: center;
   font-family: 'oswald', sans-serif;
   font-size: 25px;
-  backdrop-filter: blur(4px);
 }
 
 .SubTitulos{
@@ -64,11 +60,13 @@ main{
   align-content: space-between;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Merriweather', serif;;
-  text-decoration: underline;
-  text-decoration-color:rgb(255, 219, 172);
-  text-decoration-style:wavy;
+}
+
+.ContenedorProductos{
+  background-color: rgba(0, 0, 0);
+  box-shadow:1px 1px 100px rgb(115, 115, 115);
 }
 
 .ProductList-Container{
@@ -78,25 +76,27 @@ main{
   align-items: center;
   justify-items: center;
   justify-content: space-around;
-  backdrop-filter: blur(2px);
+  padding: 15px;
+  margin: 10px;
+
 }
 
 .Producto{
   text-align: center;
   font-family: 'oswald', sans-serif;
 }
-.ImagenProducto{
-  width: 320px;
-}
+
 .NombreProducto{
   font-size: 1.6rem;
 } 
 
 .itemListContainer{
-  width: 100%;
-  min-height: 60vh;
   padding: 30px;
-  margin-bottom: 60px;
+}
+
+.ImagenProducto{
+  border-radius: 100px;
+  width: auto;
 }
 
 .botones{
@@ -105,17 +105,20 @@ main{
   width: 140px;
   height: 50px;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 40px auto 0;
 }
 .numero{
   text-align: center;
-  background-color: black;
-  border-radius: 10px;
+  background-color: rgba(44, 44, 44, 0.4);
+  border-radius: 8px;
 }
 .btnCompra{
   text-align: center;
   display: inline-block;
+  font-size: 1.5rem;
+  border: solid grey;
+  border-radius: 8px;
 }
 
 

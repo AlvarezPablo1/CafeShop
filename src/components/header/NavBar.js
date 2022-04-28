@@ -5,7 +5,7 @@ const NavBar = () => {
   return (  
   <div className="navbar bg-base-100">
     <div className="flex-1">
-      <a href="./main/AboutUs.js" id="titulo" className="btn btn-ghost normal-case text-xl"><Link to='/AboutUs'>CafeShop</Link></a>
+      <Link id="titulo" className="btn btn-ghost normal-case text-xl" to ='/AboutUs'>CafeShop</Link>
     </div>
     <div id="navbar" className="flex-none">
       <ul className="menu menu-horizontal p-0">
