@@ -1,12 +1,11 @@
 
-
 export const productList = [
     {
         name: 'cafe arabico',
         id: 1,
         price:700,
         stock: 10,
-        image: '../components/assets/img/cafes.jpeg'
+        image: '.././components/assets/img/cafes.jpeg'
     },
     {
         name: 'cafe cubano',

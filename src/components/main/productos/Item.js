@@ -7,7 +7,7 @@ const Item = ({name, id, price, stock, image}) => {
 
 
   return (
-    <article>
+    <article className="Producto">
       <img className="ImagenProducto" src={image} alt="productos"></img>
       <h3 className="NombreProducto">{name}</h3>
       <span className="Precio">{price}</span>

@@ -71,35 +71,51 @@ main{
   text-decoration-style:wavy;
 }
 
-.productos{
-  backdrop-filter: blur(4px); 
-  display: inline-block;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
-}
-.botones{
-  display: flex;
-  font-size: 30px;
+.ProductList-Container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.btnCompra{
-  background-color: black;
-  color: bisque;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  cursor: pointer;
+  justify-items: center;
+  justify-content: space-around;
+  backdrop-filter: blur(2px);
 }
 
-.fotoProducto{
-  border-top-right-radius: 5px;
+.Producto{
+  text-align: center;
+  font-family: 'oswald', sans-serif;
 }
+.ImagenProducto{
+  width: 320px;
+}
+.NombreProducto{
+  font-size: 1.6rem;
+} 
+
+.itemListContainer{
+  width: 100%;
+  min-height: 60vh;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.botones{
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  width: 140px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 40px auto 0;
+}
+.numero{
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+}
+.btnCompra{
+  text-align: center;
+  display: inline-block;
+}
+
 

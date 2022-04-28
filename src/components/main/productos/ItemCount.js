@@ -12,7 +12,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
       <div className="productos"> 
         <div className="botones">
           <button className="btn" onClick={() => addProduct(-1)} disabled={count === initial ? true : null}>-</button>
-          <span>{count}</span>
+          <span className="numero">{count}</span>
           <button  className="btn" onClick={() => addProduct(+1)} disabled={count === stock ? true : null}>+</button>
         </div>
         <div className="btnCompra">
