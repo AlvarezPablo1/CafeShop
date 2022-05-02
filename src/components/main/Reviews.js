@@ -1,6 +1,10 @@
 const Reviews = () => {
   return (
-    <div>
+    <div className="contenedorReviews">
+      <h2 className='SubTitulos' id="subtituloReviews">Reviews</h2>
+      <div>
+        
+      </div>
     </div>
   )
 }

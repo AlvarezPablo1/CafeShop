@@ -25,16 +25,11 @@ function App() {
           <br/><br/><br/><br/><br/><br/><br/><br/>
           <AboutUs className="about"/>
           <br/><br/><br/>
-        <br/><br/><br/>
-        <Products/>
-        <br/><br/><br/>
-        <h2 className='SubTitulos'>Reviews</h2>
-        <br/><br/><br/>
-        <Reviews/>
-        <br/><br/><br/>
-        <h2 className='SubTitulos'>Contacto</h2>
-        <br/><br/><br/>
-        <Contact/>
+          <Products/>
+          <Reviews/>
+          <br/><br/><br/>
+          <br/><br/><br/>
+          <Contact/>
       </main>
     </div>
   );
