@@ -1,6 +1,6 @@
-import CafeArabico from '../components/assets/img/CafeArabico.jpeg'
-import CafeRobusto from '../components/assets/img/CafeRobusto.jpeg'
-import CafeLiberico from '../components/assets/img/CafeLiberico.jpeg'
+import CafeArabico from '../components/assets/img/CafeArabico.png'
+import CafeRobusto from '../components/assets/img/CafeRobusto.png'
+import CafeLiberico from '../components/assets/img/CafeLiberico.png'
 
 export const productList = [
     {
