@@ -1,10 +1,12 @@
 import ItemCount from "./ItemCount";
 
-const Item = ({name, id, price, stock, image, description}) => {
+const ItemDetail = ({product}) => {
+
   const onAdd = (count) =>{
     alert(`Has agregado ${count} productos`); 
-  };
-
+    };
+    
+    const {image, name, price, description, stock} = product
 
   return (
     <article className="Producto">
@@ -16,4 +18,4 @@ const Item = ({name, id, price, stock, image, description}) => {
     </article>
   )
 }
-export default Item
+export default ItemDetail

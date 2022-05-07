@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import Item from './Item'
+import ItemDetail from "./ItemDetail";
 import {productList} from "../../../data/ArrayProductos.js";
 
 const ItemList = () => {
   const [Products, setProducts] = useState([]);
 
-  const getProducts = new Promise((resolve, reject) =>{
+  const getProducts = new Promise((resolve) =>{
     setTimeout(() => {
       resolve(productList);
     }, 2000);
@@ -28,30 +28,8 @@ const ItemList = () => {
 
   return (
     <div className="ProductList-Container">
-      {
-        Products.length ? (
-          <>
-          {
-            Products.map((product) => {
-              return(
-                <div key={product.id}>
-                  <Item
-                    name={product.name}
-                    image={product.image}
-                    price={product.price}
-                    stock={product.stock}
-                    id={product.id}
-                    description={product.description}
-                  />
-                </div>
-              );
-            })
-          } 
-          </>
-        ) : (
-            <p>Cargando productos...</p>
-          )
-      }
+      {Products.map( p => <ItemDetail key={p.id} product={p}/>
+      )}
     </div>
   )
 }
