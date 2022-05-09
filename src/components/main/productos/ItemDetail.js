@@ -1,8 +1,13 @@
+import { useState } from "react";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({product}) => {
 
+  const[terminar, setTerminar] = useState(false)
+
+
   const onAdd = (count) =>{
+    setTerminar(true)
     alert(`Has agregado ${count} productos`); 
     };
     
@@ -14,7 +19,13 @@ const ItemDetail = ({product}) => {
       <h3 className="NombreProducto">{name}</h3>
       <span className="Precio">{price} $</span>
       <p className="DescripcionProducto">{description}</p>
-      <ItemCount stock={stock} onAdd={onAdd} initial={1}/>
+      {terminar ? (
+        <button className="btnCompra">
+          terminar compra
+        </button>
+      ) : (<ItemCount stock={stock} onAdd={onAdd} initial={1}/>
+      )}
+      
     </article>
   )
 }
