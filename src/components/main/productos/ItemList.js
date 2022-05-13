@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {productList} from "../../../data/ArrayProductos.js";
-import ItemDetail from "./ItemDetail";
+import Item from "./Item";
 
 const ItemList = () => {
   const [Products, setProducts] = useState([]);
@@ -28,7 +28,7 @@ const ItemList = () => {
 
   return (
     <div className="ProductList-Container">
-      {Products.map( p => <ItemDetail key={p.id} product={p}/>
+      {Products.map( p => <Item key={p.id} product={p}/>
       )}
     </div>
   )

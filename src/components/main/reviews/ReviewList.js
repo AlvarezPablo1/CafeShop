@@ -46,7 +46,7 @@ const ReviewList = () => {
           }
           </>
         ) : (
-          <p>Cargando Reviews</p>
+          <p></p>
         )
       }
     </div>

@@ -21,10 +21,10 @@ html{
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  background-image: url(./components/assets/img/Background.jpg);
 }
 
 main{
-  background-image: url(./components/assets/img/Background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -37,7 +37,6 @@ main{
   display: flex;
   font-size: 20px;
   box-shadow:1px 1px 10px rgb(115, 115, 115);
-  position: fixed;
 }
 .list{
   display: flex;
@@ -87,6 +86,10 @@ main{
 
 /*Texto*/
 
+.textoPaginaNoEncontrada{
+  text-align: center;
+}
+
 .parrafoPresentacion{
   text-align: center;
   display:  flex;
@@ -96,6 +99,7 @@ main{
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .SubTitulos{
@@ -107,9 +111,26 @@ main{
   align-items: center;
   font-size: 70px;
   font-family: 'Merriweather', serif;
+  text-decoration: underline;
+}
+
+/*ContenedorAboutUs*/
+
+.ContenedorAboutUs{
+  background-color: rgba(0, 0, 0);
+  box-shadow:1px 1px 10px rgb(115, 115, 115);
 }
 
 /*Productos*/
+
+.SubtituloProductoCompleto{
+  background-color: rgba(0, 0, 0);
+  box-shadow:1px 1px 10px rgb(115, 115, 115);
+}
+
+.FooterProductosCompletos{
+  background-color: rgba(0, 0, 0);
+}
 
 .ContenedorProductos{
   background-color: rgba(0, 0, 0);
@@ -124,6 +145,7 @@ main{
   justify-items: center;
   justify-content: space-around;
   gap:1.5rem;
+  background-color: black;
 }
 
 .Producto{
@@ -173,10 +195,7 @@ font-size: 20px;
 
 .contenedorReviews{
   background-color: black;
-}
-
-#subtituloReviews{
-  text-decoration: overline;
+  box-shadow:1px 1px 10px rgb(115, 115, 115);
 }
 
 .ReviewList-Container{
@@ -211,6 +230,13 @@ font-size: 20px;
   padding: 2rem 0; 
 }
 
+/*CarritoPagina*/
+
+.ContenedorCarrito{
+  background-color: black;
+  box-shadow:1px 1px 10px rgb(115, 115, 115); 
+}
+
 /*Contact*/
 
 .Footer{
@@ -223,7 +249,6 @@ font-size: 20px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 /*MediasQuery*/
@@ -239,17 +264,15 @@ font-size: 20px;
   }
   #navbar{
     position: absolute;
-    top: 100%; 
-    right: -100%;
+    top: 13%;
+    opacity: 0%;
     width: 100%;
     backdrop-filter: blur(8px);
     height: calc(100vh - 5rem);
   }
-
   .active{
-    right: 0%;
+    opacity: 100%;
   }
-
   .list{
     display: block;
     margin: 1.5rem;
